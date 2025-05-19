@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(94, 163, 198);
+}
+
+.container {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  width: 350px;
+  
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  margin:  90px auto;
+  padding: 20px 30px;
+  background-color: aliceblue;
+}
