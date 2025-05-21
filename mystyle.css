@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(94, 163, 198);
+  background-color: rgb(186, 185, 185);
 }
 
 .container {
@@ -7,10 +7,79 @@ body {
   -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
   width: 350px;
-  
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   margin:  90px auto;
   padding: 20px 30px;
   background-color: aliceblue;
+}
+
+  
+.row{
+       -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: blueviolet;
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-family: Roboto,sans-serif;
+    color: #333333;
+    box-sizing: border-box;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+#message {
+
+    display: block;
+  background: aliceblue;
+  color: #000;
+  position: relative;
+  padding: 10px;
+  margin-top: 10px;  
+}
+
+#message p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px 35px;
+  font-size: 0.875rem;
+  
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -5px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: rgb(221, 82, 82);
+}
+
+.invalid:before {
+  position: relative;
+  left: -5px;
+  content: "x";
+}
+
+.j{
+ text-align: left;
+    margin: 0;
+    border: 0;
+    font: inherit;
+        
+    align-items: center;
+    flex-wrap: wrap;
+      
+    
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    
+    line-height: 1.43;
 }
