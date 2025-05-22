@@ -1,22 +1,29 @@
 body {
-  background-color: rgb(186, 185, 185);
+  background-color: rgb(231, 231, 231);
 }
 
 .container {
+    display: flex;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
-  width: 350px;
+  width: 450px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   margin:  90px auto;
   padding: 20px 30px;
   background-color: aliceblue;
 }
+.container h2{
 
+    
+    color: rgb(0, 94, 255);
+}
   
 .row{
-       -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: blueviolet;
+   
+    
+   
+   
     font-size: 14px;
     line-height: 1.42857143;
     font-family: Roboto,sans-serif;
@@ -28,19 +35,17 @@ body {
 
 
 #message {
-
-    display: block;
-  background: aliceblue;
-  color: #000;
+    display: none;
+   height: 80px;
+  background: rgb(61, 194, 105);
   position: relative;
-  padding: 10px;
-  margin-top: 10px;  
 }
 
-#message p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 10px 35px;
-  font-size: 0.875rem;
+#message p{
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    padding: 10px;
   
 }
 
@@ -51,35 +56,20 @@ body {
 
 .valid:before {
   position: relative;
-  left: -5px;
+  left: -4px;
   content: "✔";
 }
 
 /* Add a red text color and an "x" when the requirements are wrong */
 .invalid {
   color: rgb(221, 82, 82);
+  
 }
 
 .invalid:before {
-  position: relative;
-  left: -5px;
-  content: "x";
+    position: relative;
+    left: -4px;
+    content: "•";
+   
 }
 
-.j{
- text-align: left;
-    margin: 0;
-    border: 0;
-    font: inherit;
-        
-    align-items: center;
-    flex-wrap: wrap;
-      
-    
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 6px;
-    
-    line-height: 1.43;
-}

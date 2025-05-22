@@ -13,111 +13,116 @@
 
   <body>
     <div class="container">
-      <h2>Sign up</h2>
+      <div class="row">
+        <h2>Sign up</h2>
 
-      <form novalidate class="was-validated">
-        <!--AD test-->
+        <form novalidate class="was-validated">
+          <!--AD test-->
 
-        <!--First Name field-->
-        <div class="row">
-          <div class="form-group">
-            <label for="fname">First name:</label>
-            <input
-              type="text"
-              class="form-control-lg"
-              placeholder="First Name"
-              name="fname"
-              required="required"
-            />
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
+          <!--First Name field-->
+          <div class="row">
+            <div class="form-group">
+              
+              <input
+                type="text"
+                class="form-control-lg"
+                placeholder="First Name"
+                name="fname"
+                required="required"
+              />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
           </div>
-        </div>
-        <!--Last Name field-->
-        <div class="row">
-          <div class="form-group">
-            <label for="lname">Last name:</label>
-            <input
-              type="text"
-              class="form-control-lg"
-              placeholder="Last Name"
-              name="lname"
-              required="required"
-            />
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
+          <!--Last Name field-->
+          <div class="row">
+            <div class="form-group">
+              
+              <input
+                type="text"
+                class="form-control-lg"
+                placeholder="Last Name"
+                name="lname"
+                required="required"
+              />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
           </div>
-        </div>
-        <!--Email field-->
-        <div class="row">
-          <div class="form-group">
-            <label for="Mail">Email:</label>
-            <input
-              type="email"
-              class="form-control-lg"
-              placeholder="user@example.com"
-              name="Mail"
-              required
-            />
+          <!--Email field-->
+          <div class="row">
+            <div class="form-group">
+             
+              <input
+                type="email"
+                class="form-control-lg"
+                placeholder="user@example.com"
+                name="Mail"
+                required
+              />
 
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
           </div>
-        </div>
-        <!--Password field-->
-        <div class="row">
-          <div class="form-group">
-            <label for="Pw">Password:</label>
-            <input
-              class="form-control-lg"
-              type="password"
-              id="pwd"
-              placeholder="Password"
-              name="password"
-              minlength="8"
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              required
-            />
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
+          <!--Password field-->
+          <div class="row">
+            <div class="form-group">
+              
+              <input
+                class="form-control-lg"
+                type="password"
+                id="pwd"
+                placeholder="Password"
+                name="password"
+                minlength="8"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                required
+              />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
           </div>
-        </div>
-        <!--Repeat password-->
-        <div class="row">
-          <div class="form-group">
-            <label for="psw-repeat">Repeat Password</label>
-            <input
-              class="form-control-lg"
-              type="password"
-              placeholder="Repeat Password"
-              name="psw-repeat"
-              required
-            />
+          <!--Repeat password
+          <div class="row">
+            <div class="form-group">
+              <label for="psw-repeat">Repeat Password</label>
+              <input
+                class="form-control-lg"
+                type="password"
+                placeholder="Repeat Password"
+                name="psw-repeat"
+                required
+              />
+            </div>
+          </div>-->
+          <!--Password Requirements-->
+          <div id="message">
+            <p id="letter" class="invalid"><b>Lowercase</b> letter</p>
+            <p id="capital" class="invalid">
+              <b>Capital (uppercase)</b> letter
+            </p>
+            <p id="number" class="invalid"><b>Number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
           </div>
-        </div>
-        <!--Password Requirements-->
-        <div id="message">
-          <p id="letter" class="invalid"><b>Lowercase</b> letter</p>
-          <p id="capital" class="invalid"><b>Capital (uppercase)</b> letter</p>
-          <p id="number" class="invalid"><b>Number</b></p>
-          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-        </div>
 
-        <!--Checkbox-->
-        <div class="row">
-          <input id="mycheck" type="checkbox" onclick="togglePassword()" />
-          <label class="form-check-label">Show password </label>
-        </div>
+          <!--Checkbox-->
+          <div class="row">
+            <input id="mycheck" type="checkbox" onclick="togglePassword()" />
+            <label class="form-check-label">Show password </label>
+          </div>
 
-        <!-- <div class="row">
+          <!-- <div class="row">
 
           <input id="check" type="checkbox" onclick= "this.checked?'password':'text'"/>
           <label class="form-check-label">Show </label>
 
         </div>-->
 
-        <br /><button type="submit" class="btn btn-primary">Create</button>
-      </form>
+          <br /><button type="submit" class="btn btn-primary">Create</button>
+          
+        </form>
+      </div>
     </div>
   </body>
 
